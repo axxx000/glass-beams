@@ -26,6 +26,7 @@ body {
   min-height: 100vh;
 font-family: 'Courier New', Courier, monospace;
 background-color: #865628;
+display: grid;
 
 
 }
@@ -75,7 +76,9 @@ h3 {
 
 /*  */ 
 
-#logo {
+image
+
+#branding {
 
   width: 60%;
     display: block;
@@ -94,13 +97,11 @@ color: #0B0A09;
 
   clear: left;
   display: flex;
-  align-items: center;
-  justify-content: center; 
-
-  
-  /* does this go in to the embedded form or in to the parent container? */
+  justify-content: center;  
 
 }
+
+
 
 /* Form */
 
@@ -108,7 +109,9 @@ color: #0B0A09;
 
 {
 
-width: 26%;
+min-width: 28%;
+max-width: 410px;
+
 }
 
 
@@ -133,7 +136,7 @@ margin-bottom: 1.2em;
 
 #mc_embed_signup .mc-field-group input {
 font-family: 'Courier New', Courier, monospace;
-font-size: 1.4rem;
+font-size: 1.1rem;
 font-weight: 600;
 height: 50px;
 background-color:#865628;
@@ -187,7 +190,7 @@ border-color: black !important;
 #mc_embed_signup .button {
 
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1.4rem;
+  font-size: 1.1rem; /* 18px */
   font-weight: 600;
   width: 100%;
   height: 50px;
@@ -222,10 +225,11 @@ margin-bottom: auto;
 .checkbox 
 
 {
-font-size: 0.9rem;
+font-size: 0.7rem; /* 11px */
 margin: 2em 0 2em 0;
 color: black;
 }
+
 
 /* Success message */ 
 
@@ -251,8 +255,16 @@ margin-bottom: 1em;
 #mc_embed_signup
  {
   width: auto;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
 
     }
+
+    #branding 
+    
+    {
+      width: 65%;
+        }
 
 }
 

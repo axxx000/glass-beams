@@ -1,227 +1,287 @@
+ 
+/* Root page */
+
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 600;
-  
-    color-scheme: light dark;
-    color: #0B0A09;
-    background-color: #865628;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+
+  color-scheme: light dark;
+  color: #0B0A09;
 
 
-    /* background-color was #242424 
-    color: rgba(255, 255, 255, 0.87); 
-    */
-  
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-  }
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
 
+/* Page settings - global */
 
-  body {
-    margin: 0;
-    min-width: 320px;
-    min-height: 100vh;
-  font-family: 'Courier New', Courier, monospace;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  }
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+font-family: 'Courier New', Courier, monospace;
+background-color: #865628;
+display: grid;
 
-  h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
-  }  
-  /* Ts & Cs */
-
-  .header-inner 
-  
-  {
-    padding-top: 50px;
-    box-sizing: border-box;
-    width: 100%;
-  }
-
-  #page {
-    max-width: 1080px;
-    padding: 54px 34px;
-    margin: auto;
-    width: auto;
-    box-sizing: border-box;
-  }
-
-  .content {
-
-    width: 100%;
-    display: block;
-  }
-
-  p
-  
-  {
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight:600;
-  }
-
-  h3 {
-
-    font-size: 18px;
-    font-weight:900;
-  }
-
-  .mailchimp {
-  display: flex;
-  place-items: center;
 
 }
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}  
+
+/* Ts & Cs */
+
+.header-inner 
+
+{
+  padding-top: 50px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#page {
+  max-width: 1080px;
+  padding: 54px 34px;
+  margin: auto;
+  width: auto;
+  box-sizing: border-box;
+}
+
+.content {
+
+  width: 100%;
+  display: block;
+}
+
+p
+
+{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight:600;
+}
+
+h3 {
+
+  font-size: 18px;
+  font-weight:900;
+}
+
+/*  */ 
+
+image
+
+#branding {
+
+  width: 60%;
+    display: block;
+    margin: auto;
+  }
+
 
 a {
 color: #0B0A09;
 
 }
 
-/* styles for checkbox validation */
-
-
-
-#checkboxValidationMessage
-
-{
-  display: inline-block;
-  margin: 2px 0 1em 0;
-  padding: 3px;
-  font-size: 0.9rem;
-  z-index: 1;
-  font-weight: 200;
-  margin-bottom: auto;
-
-}
-.checkbox 
-
-{
-font-size: 0.9rem;
-margin: 2em 0 2em 0;
-}
-
-
-#mc_embed_signup_scroll {
-  width: 100%; /* Set the width to 100% */
-}
+/* Sub form */
 
 #mc_embed_signup {
 
-    clear: left;
-    width: 38vw;
-    max-width: 550px;
+  clear: left;
+  display: flex;
+  justify-content: center;  
 
 }
+
+
+
+/* Form */
+
+#mc-embedded-subscribe-form
+
+{
+
+min-width: 28%;
+max-width: 410px;
+
+}
+
+
+/* Sub form
+
+- Field group parent [email & country]
+
+*/ 
 
 
 #mc_embed_signup .mc-field-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.2em;
-  
+ 
+margin-bottom: 1.2em;
+
 }
+
+/* Sub form
+
+- Individual inputs
+
+*/ 
 
 #mc_embed_signup .mc-field-group input {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1.4rem;
-  font-weight: 600;
-  width: 100%; /* Set the width to 100% */
-  height: 50px;
-  background-color:#865628;
-  border: 2px solid #000; /* Set border color to black */
-  color: #000;
-  text-align: center;
+font-family: 'Courier New', Courier, monospace;
+font-size: 1.1rem;
+font-weight: 600;
+height: 50px;
+background-color:#865628;
+border: 2px solid #000; /* Set border color to black */
+color: #000;
+text-align: center;
 
 }
 
-#mc_embed_signup .button {
- 
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.4rem;
-    font-weight: 600;
-    width: 102%;
-    height: 50px;
-    border-color: #F97605;
-    border-width: 2px;
-    border-style: solid;
-    color: #F97605; /* Inherit the text color from the input fields */
-    background-color: transparent;
-    cursor: pointer;
-    text-align: center; /* Align text to center for consistency */
-    transition: color 0.3s ease; /* Add a smooth transition for text color on hover */
-}
 
 
 #mc_embed_signup .mc-field-group input::placeholder {
-  color: #000; /* Set placeholder text color to black */
+  color: #000; 
   text-align: center;
-}
+  }
+  
+
+
+/* Event: "This field needs to be entered"  */
+
 
 #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error
 
 {
-  display: inline-block;
-  margin: 2px 0 1em 0;
-  padding: 3px;
-  font-size: 0.9rem;
-  font-weight: normal;
-  color: black;
-  background-color:transparent;
-  margin-bottom: auto;
-  
+display: inline-block;
+margin: 2px 0 1em 0;
+padding: 3px;
+font-size: 0.9rem;
+font-weight: normal;
+color: black;
+background-color:transparent;
+margin-bottom: auto;
+
 }
+
+/* Empty field style on input box  */ 
 
 #mc_embed_signup input.mce_inline_error
 
 {
 
-  border-color: black !important;
+border-color: black !important;
 }
+
+/* Sub form
+
+- Button
+
+*/ 
+
+#mc_embed_signup .button {
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem; /* 18px */
+  font-weight: 600;
+  width: 100%;
+  height: 50px;
+  border-color: #F97605;
+  border-width: 2px;
+  border-style: solid;
+  color: #F97605; /* Inherit the text color from the input fields */
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center; /* Align text to center for consistency */
+  transition: color 0.3s ease; /* Add a smooth transition for text color on hover */
+}
+
+
+/* Event: "Please read the terms and .."  */
+
+#checkboxValidationMessage
+
+{
+display: inline-block;
+margin: 2px 0 1em 0;
+padding: 3px;
+font-size: 0.9rem;
+z-index: 1;
+font-weight: 200;
+margin-bottom: auto;
+
+}
+
+/* Div class for checkbox */
+
+.checkbox 
+
+{
+font-size: 0.7rem; /* 11px */
+margin: 2em 0 2em 0;
+color: black;
+}
+
+
+/* Success message */ 
 
 #mce-success-response
 
 {
 
-  font-weight: 100;
-  font-size: 0.9rem;
-  color: white;
-  margin-bottom: 1em;
+font-weight: 100;
+font-size: 0.9rem;
+color: white;
+margin-bottom: 1em;
 }
 
-/* mobile */
+/* Sub form 
+
+- mobile query 
+
+*/
 
 @media only screen and (min-width: 320px) and (max-width: 480px)
-  
+
 {
-  #mc_embed_signup
-   {
-    width: auto;
-    padding: 30px;
-      }
+#mc_embed_signup
+ {
+  width: auto;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
+
+    }
+
+    #branding 
+    
+    {
+      width: 65%;
+        }
 
 }
+
+/* Sub form 
+
+- Tablet query 
+
+*/
+
+
 
 @media only screen and (min-width: 481px) and (max-width: 768px)
 {
-  #mc_embed_signup
-  {
-width: 40vw;
-min-width: 300px;
-margin-right: 4px;
+#mc_embed_signup
+{
+  
 
-  }
+
+}
 }
 
-#logo {
-
-  width: 60%;
-    display: block;
-    margin: auto;
-  }
