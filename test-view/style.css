@@ -189,10 +189,19 @@ position: relative;
   #ig-icon img
 
   {
-
     width: 30px;
   }
+
+  @media only screen and (min-width: 320px) and (max-width: 480px)
+
+  {
+    #ig-icon
  
+    {
+        bottom: 25px;
+    }
+
+  }
 
 
 
@@ -438,12 +447,4 @@ margin-bottom: 1em;
 */
 
 
-
-@media only screen and (min-width: 481px) and (max-width: 768px)
-{
-#mc_embed_signup
-{
-  
-}
-}
 
