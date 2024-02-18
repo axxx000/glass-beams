@@ -63,11 +63,11 @@ header
 
 {
   position: absolute;
-  padding: 0 1em;
-  top: 2em;
+  padding: 0 20px;
+  top: 65px;
   width: -webkit-fill-available;
   font-family: 'adobe_devanagaribold';
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 0.25em;
  
 }
@@ -177,11 +177,11 @@ position: relative;
 
 #ig-icon
 {
-    position: absolute;
+    display: block;
     margin: auto;
     left: 0;
     right: 0;
-    bottom: 40px;
+    bottom: 80px;
     text-align: center;
     z-index: 0;
   }
@@ -192,13 +192,13 @@ position: relative;
     width: 30px;
   }
 
-  @media only screen and (min-width: 320px) and (max-width: 480px)
+  @media only screen and (min-width: 320px) and (max-width: 600px)
 
   {
     #ig-icon
  
     {
-        bottom: 0px;
+        bottom: 30px;
     }
 
   }
@@ -246,7 +246,7 @@ h3 {
   font-weight:900;
 }
 
-/*  */ 
+/* logo */ 
 
 image
 
@@ -256,6 +256,32 @@ image
     display: block;
     margin: auto;
   }
+
+  /* logo - mobile */
+
+
+  @media only screen and (max-width: 600px)
+
+{
+
+  #branding
+  {
+    top: 0px !important;
+    padding-bottom: 1.1em !important;
+  }
+}
+
+
+@media only screen and (min-width: 601px)
+
+{
+    #branding
+  {
+    top: 50px;
+    padding-bottom: 1.1em;
+  }
+}
+
 
 
 a {
@@ -269,7 +295,8 @@ color: #0B0A09;
 
   clear: left;
   display: flex;
-  justify-content: center;  
+  justify-content: center; 
+  align-items: center;
 
 }
 
@@ -446,5 +473,14 @@ margin-bottom: 1em;
 
 */
 
+@media only screen and (max-width: 600px)
 
+{
+
+  #mc_embed_signup
+  {
+    align-items: center;
+    
+  }
+}
 
