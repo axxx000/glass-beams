@@ -3,7 +3,7 @@
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-   
+    <script src="/test-view/index.js"></script>
     <meta charset="utf-8">
     <title>Glass Beams - Subscribe</title>
     <link rel="icon" type="image/svg+xml" href="Design 2/icon_face_white.jpeg" />
@@ -11,65 +11,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
+<header>
+    <nav>
+        <ul>
+            <li><a href="https://glassbeams.lnk.to/mahalAP">MUSIC</a></li>
+            <li><a href="https://www.youtube.com/channel/UCz2BbywXgCxZcpAiXPlKT4Q">VIDEOS</a></li>
+            <li><a href="https://open.spotify.com/artist/1LTFJvVvRw7ghAyThxYmnF">SHOWS</a></li> 
+            <li><a href="#">CONTACT</a></li>  
+        </ul>
+    </nav>
+
+<!--- Hamburgr menu -->
+
+<div id="menu-icon" onclick="toggleMobileMenu(this)">
+
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+
+    <ul class="mobile-menu">
+        <li><a href="https://glassbeams.lnk.to/mahalAP">MUSIC</a></li>
+        <li><a href="https://www.youtube.com/channel/UCz2BbywXgCxZcpAiXPlKT4Q">VIDEOS</a></li>
+        <li><a href="https://open.spotify.com/artist/1LTFJvVvRw7ghAyThxYmnF">SHOWS</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+</div>
+</header>
+
 
 <body>
 
 
-    <img id="branding" src="/Design 2/Glass Beams Logo Hi Res 2_small.png" style="margin-left:auto;margin-right:auto;margin-top:auto;padding-bottom:1.1em;max-width:300px;"; alt="Glass Beams">
-                <!--- Subscription form body -->
+   <!-- Content Section -->
+   <div id="content">
 
-    <div id="mc_embed_signup">
+              
+        
+  
+
+    <!-- Form Section -->
+
+    
+    <div id="form-container">
+
+
+    
+    <!--- Subscription form body -->
+
+               <!-- Branding Image -->
+     <img id="branding" src="/Design 2/Glass Beams Logo Hi Res 2_small.png" alt="Glass Beams">
+        
+
+            <div id="mc_embed_signup">
+
+                
 
         
         
 
-                <!--- Subscription form elements -->
+        <!--- Subscription form elements -->
 
-        <form action="https://glassbeamsmusic.us11.list-manage.com/subscribe/post?u=0615308a75373228bd6227796&amp;id=4d7bfe00b2&amp;f_id=005aafe0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" onsubmit="return validateForm()">
-            
-                
-                <!--- email input -->
-                <div class="mc-field-group">
-                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="Email" style="
-                    width: -webkit-fill-available"> 
-                </div>
+            <form action="https://glassbeamsmusic.us11.list-manage.com/subscribe/post?u=0615308a75373228bd6227796&amp;id=4d7bfe00b2&amp;f_id=005aafe0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" onsubmit="return validateForm()">
+    
+        
+        <!--- email input -->
+        <div class="mc-field-group">
+            <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="Email" style="
+            width: -webkit-fill-available"> 
+        </div>
 
-                <!--- country input -->
-                <div class="mc-field-group">
-                    <input type="text" name="COUNTRY" class="required text" id="mce-COUNTRY" required="" value="" placeholder="Country" style="
-                    width: -webkit-fill-available">
-                </div>
+        <!--- country input -->
+        <div class="mc-field-group">
+            <input type="text" name="COUNTRY" class="required text" id="mce-COUNTRY" required="" value="" placeholder="Country" style="
+            width: -webkit-fill-available">
+        </div>
 
-                <!--- Read & Agree to terms -->
-                <div class="checkbox">
-                    <input type="checkbox" id="terms-privacy" name="have-you-read-this" required="">
-                    <label for="terms-privacy">I read and agree to 
+        <!--- Read & Agree to terms -->
+        <div class="checkbox">
+            <input type="checkbox" id="terms-privacy" name="have-you-read-this" required="">
+            <label for="terms-privacy">I read and agree to 
 
-                    <!-- Privacy policy -->
-                <a href="/privacy_policy.html">Privacy Policy</a>    
-                        and     
-                    <!-- Terms & Conditions: Make this the parent and PP child -->
-                <a href="/terms_and_conditions.html">Terms & Conditions</a></label>
+            <!-- Privacy policy -->
+        <a href="/privacy_policy.html">Privacy Policy</a>    
+                and     
+            <!-- Terms & Conditions: Make this the parent and PP child -->
+        <a href="/terms_and_conditions.html">Terms & Conditions</a></label>
 
-                <!-- Error message "Please read.." -->
-                    <span id="checkboxValidationMessage" class="error-message"></span>
-                </div>
+        <!-- Error message "Please read.." -->
+            <span id="checkboxValidationMessage" class="error-message"></span>
+        </div>
 
-                
-                 <!-- Elements that are hidden  -->
+        
+         <!-- Elements that are hidden  -->
 
-                <div hidden=""><input type="hidden" name="tags" value="9333241"></div>
+        <div hidden=""><input type="hidden" name="tags" value="9333241"></div>
 
-                <div id="mce-responses" class="clear">
-                    <div class="response" id="mce-error-response" style="display: none;"></div>
-                    <div class="response" id="mce-success-response" style="display: none;"></div>
-                </div>
+        <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display: none;"></div>
+            <div class="response" id="mce-success-response" style="display: none;"></div>
+        </div>
 
-                <div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_0615308a75373228bd6227796_4d7bfe00b2" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe"></div>
-            
-        </form>
+        <div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_0615308a75373228bd6227796_4d7bfe00b2" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe"></div>
+    
+      
+
+</form>
+
+
+
+        <!-- Existing form content goes here -->
     </div>
+
+        
+</div>
+
+   
+
+
+    <!--- IG icon -->
+    
+  
+
+    <div id="ig-icon">
+        <a href="https://www.instagram.com/glass_beams/"> 
+        <img src="/assets/5335781_camera_instagram_social media_instagram logo_icon.png">
+        </a>
+    </div>
+
+
+</body>
 
 
 
@@ -134,6 +205,6 @@
     <!--- SCRIPT ENDS HERE  -->
     
 
-</body>
+
 
 </html>

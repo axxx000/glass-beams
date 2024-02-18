@@ -112,7 +112,7 @@ ul
 #menu-icon div {
   width: 35px;
   height: 3px;
-  background-color: white;
+  background-color: black;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -168,32 +168,35 @@ ul
 
 /* ig icon */
 
-footer
 
-{
-position: relative;
 
+/* Instagram Icon */
+#ig-icon {
+text-align: center;
 }
 
-#ig-icon
+#ig-icon img
 {
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    bottom: 3em;
-    text-align: center;
-    z-index: 0;
-  }
 
-  #ig-icon img
+  max-width: 30px;
+}
 
-  {
+/* Content */
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
 
-    width: 30px;
-  }
- 
-
+/* Form Container */
+#form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
 
 
 
@@ -239,15 +242,18 @@ h3 {
 
 /*  */ 
 
-image
 
 #branding {
-
   width: 60%;
-    display: block;
-    margin: auto;
-  }
+  margin: 20px auto; /* Adjust as needed */
+  display: block;
+  max-width: 300px;
+}
 
+#branding img {
+
+  min-width: 300px;
+}
 
 a {
 color: #0B0A09;
