@@ -166,6 +166,15 @@ ul
 }
 
 
+/* Content */
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+
 /* ig icon */
 
 footer
@@ -175,15 +184,26 @@ position: relative;
 
 }
 
+#footer
+  {
+      display: block;
+      margin: auto;
+      left: 0;
+      right: 0;
+      bottom: 80px;
+      z-index: 0;
+    }
+
 #ig-icon
 {
-    display: block;
-    margin: auto;
-    left: 0;
-    right: 0;
-    bottom: 80px;
+
     text-align: center;
-    z-index: 0;
+  }
+
+  #back-button 
+  {
+
+
   }
 
   #ig-icon img
@@ -202,7 +222,6 @@ position: relative;
     }
 
   }
-
 
 
 

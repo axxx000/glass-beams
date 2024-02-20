@@ -67,7 +67,7 @@ header
   top: 2em;
   width: -webkit-fill-available;
   font-family: 'adobe_devanagaribold';
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 0.25em;
  
 }
@@ -197,6 +197,7 @@ text-align: center;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+
 }
 
 
@@ -393,13 +394,23 @@ margin-bottom: auto;
 /* Div class for checkbox */
 
 .checkbox 
-
+  
 {
 font-size: 0.7rem; /* 11px */
-margin: 2em 0 2em 0;
 color: black;
 }
 
+
+@media only screen and (min-width: 320px) and (max-width: 441px)
+
+{
+
+  .checkbox
+  {
+      margin: 2em 0 2em 0; 
+  
+  }
+}
 
 /* Success message */ 
 
