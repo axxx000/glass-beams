@@ -62,7 +62,8 @@
   header 
   
   {
-    position: absolute;
+    display: block;
+    position: relative;
     padding: 0 1em;
     top: 2em;
     width: -webkit-fill-available;
@@ -164,39 +165,50 @@
     -webkit-transform: rotate(45deg) translate(-6px, -8px);
     transform: rotate(45deg) translate(-6px, -8px);
   }
+
+  .spacer 
   
+  {
+    height: 2em;
+  }
+  
+  /* footer */
+
+  #bottom-section
+  {
+
+    display: block;
+    position: relative;
+    bottom: 2em;
+  }
   
   /* ig icon */
   
-  
-  
-  /* Instagram Icon */
   #ig-icon, #back-btn {
-    display: block;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
+  
+
   }
   
-  #ig-icon 
+  .ig-icon 
   
   {
-    text-align: center;
-  }
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30px;
+      }
+
   
-  #back-btn 
+  #back-button 
     
     {
         margin-left:5%;
-        margin-bottom: 15px;
+        font-family: 'adobe_devanagariregular';
+        letter-spacing: 0.25em;
+        text-decoration: none;
     }
 
-  #ig-icon img
-  {
-    max-width: 30px;
-  }
+
 
   
   
@@ -205,7 +217,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh;
+    min-height: 90vh;
   }
   
   /* Form Container */
@@ -217,6 +229,13 @@
     flex-grow: 1;
   
   }
+
+  .contact-list
+  {
+    margin-left: 9%;
+    margin-right: 9%;
+
+  }
   
   /* wrapper */
 
@@ -224,6 +243,41 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  #right-col
+  {
+    text-align: right;
+  }
+
+  #left-col
+  {
+
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 768px)
+
+  {
+    .wrapper
+    {
+         display: block;
+         position: relative;
+         text-align: center;
+         margin-top: 6.5em;
+         margin-bottom: 4.5em;
+         margin-left: 1.2em;
+         margin-right: 1.2em;
+    }   
+
+    #right-col
+
+    {
+        text-align: center;
+
+    }
+  }
+
+  
+  
   
   /* contact */
 
@@ -237,6 +291,9 @@
     font-weight:600;
     margin: 1.5em 0 0 0;
     letter-spacing: 0.25em;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    line-height: 2;
   }
 
   #email-address
@@ -246,6 +303,9 @@
     font-size: 1.1em;
     font-weight: 400;
     letter-spacing: 0.25em;
+    text-decoration: none;
+    line-height: 2;
+    white-space: nowrap;
 
   }
   
