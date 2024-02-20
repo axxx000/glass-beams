@@ -192,7 +192,7 @@
         text-align: center;
       }
 
-      .ig-icon img, .ig-icon-home img
+      .ig-icon, .ig-icon-home img
 
       {
             width: 25px;
@@ -287,8 +287,7 @@
     #email-address 
 
     {
-
-        white-space: normal;
+        white-space: inherit !important;
     }
 
 }
