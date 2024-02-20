@@ -266,6 +266,7 @@
          margin-bottom: 4.5em;
          margin-left: 1.2em;
          margin-right: 1.2em;
+
     }   
 
     #right-col
@@ -274,7 +275,15 @@
         text-align: center;
 
     }
-  }
+  
+    #email-address 
+
+    {
+
+        white-space: normal;
+    }
+
+}
 
   
   
